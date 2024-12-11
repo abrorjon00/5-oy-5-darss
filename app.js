@@ -1,6 +1,6 @@
 alert("saytimga xush kelibsiz")
 
-// Task 1: Rangli bloklar o'yini
+// Task 1
 const colors = ['#FF5733', '#33FF57', '#3357FF', '#FF33A8', '#F7FF33', '#33FFF7', '#F733FF', '#FF8033', '#33FF83'];
 
 function getRandomColor() {
@@ -30,7 +30,7 @@ function checkGameStatus() {
     }
 }
 
-// Task 2: Vazifalar ro'yxati
+// Task 2
 const wrapper = document.querySelector('#wrapper');
 const input = document.querySelector('#in');
 const addButton = document.querySelector('#btn');
@@ -55,12 +55,11 @@ addButton.addEventListener('click', () => {
 
         input.value = '';
 
-        // O'chirish funksiyasi
+     
         deleteButton.addEventListener('click', () => {
             taskBlock.remove();
         });
 
-        // O'chgan ko'rinish qilish
         taskTitle.addEventListener('click', () => {
             if (taskTitle.style.textDecoration === 'line-through') {
                 taskTitle.style.textDecoration = 'none';
@@ -73,7 +72,7 @@ addButton.addEventListener('click', () => {
     }
 });
 
-// Task 3: Vaqtni hisoblash (timer)
+// Task 3
 let startButton = document.querySelector('#start');
 let stopButton = document.querySelector('#stop');
 let resetButton = document.querySelector('#reset');
@@ -125,5 +124,5 @@ startButton.addEventListener('click', startTimer);
 stopButton.addEventListener('click', stopTimer);
 resetButton.addEventListener('click', resetTimer);
 
-// Boshlang'ich holatini yangilash
+
 updateTimerDisplay();
